@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Deploy to PythonAnywhere
-      uses: actions/pythonanywhere-deploy-action@v1
+      uses: chrispat/pythonanywhere-deploy-action@v1
       with:
         username: ${{ secrets.PYTHONANYWHERE_USERNAME }}
         password: ${{ secrets.PYTHONANYWHERE_PASSWORD }}
